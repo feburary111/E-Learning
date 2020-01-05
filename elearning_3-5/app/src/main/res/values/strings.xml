@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">SmartClass</string>
+    
+    <string-array name="bottom_tab_bar_titles">
+        <item>近期记录</item>
+        <item>当前课堂</item>
+        <item>个人中心</item>
+    </string-array>
+
+    <string-array name="top_tab_bar_titles">
+        <item>概况</item>
+        <item>班级</item>
+    </string-array>
+
+
+    <!--Attendance Statistics-->
+    <string-array name="attendance_statistics_titles">
+        <item>总体出勤统计</item>
+        <item>班级出勤统计</item>
+    </string-array>
+
+    <string-array name="attendance_statistics_details_titles">
+        <item>迟到</item>
+        <item>旷课</item>
+        <item>早退</item>
+        <item>请假</item>
+    </string-array>
+
+
+    <!--Student Status-->
+    <string-array name="student_status_titles">
+        <item>当前状态</item>
+        <item>状态变化</item>
+    </string-array>
+
+    <string-array name="concentration_distribution_titles">
+        <item>专注度分布</item>
+        <item>未专注分布</item>
+    </string-array>
+
+    <string-array name="unfocused_student_details_titles">
+        <item>睡觉</item>
+        <item>玩手机</item>
+        <item>走神</item>
+    </string-array>
+
+
+    <!--Overall Recent Record-->
+    <string-array name="overall_student_recent_status_titles">
+        <item>出勤情况</item>
+        <item>课堂状态</item>
+    </string-array>
+
+    <string-array name="overall_student_recent_status_ranking_titles">
+        <item>出勤情况排行</item>
+        <item>课堂状态排行</item>
+    </string-array>
+
+
+    <string name="personal_center">个人中心</string>
+    <string name="current_class">当前课堂</string>
+    <string name="attendance">出勤率</string>
+    <string name="backslash">/</string>
+    <string name="loading_text">数据加载中</string>
+
+    <string name="class_name">班级</string>
+    <string name="name">姓名</string>
+    <string name="student_id">学号</string>
+    <string name="unfocused_time">未专注时长</string>
+    <string name="overview">概况</string>
+    <string name="click_to_see_details">点击一下查看名单</string>
+
+    <string name="late">迟到</string>
+    <string name="absent">旷课</string>
+    <string name="leave_early">早退</string>
+    <string name="ask_for_leave">请假</string>
+
+    <!--Current Class-->
+    <string name="common_tools">常用工具</string>
+    <string name="classroom_application">课堂应用</string>
+    <string name="one_click_name">一键点名</string>
+    <string name="student_status">学生状态</string>
+    <string name="attendance_statistics">出勤统计</string>
+    <string name="reissue_application">补签申请</string>
+    <string name="absence_reminder">缺勤提醒</string>
+    <string name="leave_management">请假管理</string>
+    <string name="class_discussion">课堂讨论</string>
+    <string name="other_check_in_methods">其他签到</string>
+    <string name="data_sharing">资料共享</string>
+    <string name="post_assignment">发布作业</string>
+    <string name="more_applications">更多应用</string>
+
+    <!--Personal Center-->
+    <string name="btm_my_class">我的课堂</string>
+    <string name="btm_post_assignment">作业发布</string>
+    <string name="btm_upload_material">资料上传</string>
+    <string name="btm_scan_QR_code">扫一扫</string>
+    <string name="btm_course">我的课表</string>
+    <string name="btm_class_management">班级管理</string>
+    <string name="btm_contact_us">联系我们</string>
+    <string name="btm_settings">设置</string>
+
+
+    <!--Login-->
+    <string name="title_login">登陆</string>
+    <string name="hint_phone_or_email">手机号或邮箱</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_forget_password">忘记密码</string>
+    <string name="btm_login">登陆</string>
+    <string name="btm_registered">新用户注册</string>
+    <string name="btm_login_by_vc_code">手机验证码登录</string>
+
+
+    <!--Registered-->
+    <string name="title_registered">注册</string>
+    <string name="hint_vc_code">验证码</string>
+    <string name="hint_get_vc_code">获取验证码</string>
+    <string name="hint_set_password">设置密码</string>
+    <string name="btm_next_step">下一步</string>
+
+    <string name="btm_login_by_code">验证码登录</string>
+
+</resources>

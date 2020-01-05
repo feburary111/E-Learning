@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_1032"
+        android:layout_height="@dimen/px_355"
+        android:layout_marginStart="@dimen/px_24"
+        android:layout_marginTop="@dimen/px_27"
+        android:background="@drawable/bg_border_radius">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_49"
+            android:layout_marginStart="@dimen/px_38"
+            android:gravity="center_vertical">
+
+            <com.example.smartclass.util.CircleBarView
+                android:id="@+id/overallRecentRecordCircleProgressBar"
+                android:layout_width="@dimen/px_252"
+                android:layout_height="@dimen/px_252"
+                app:start_angle="270"
+                app:sweep_angle="360"
+                app:bg_color="@android:color/transparent"
+                app:bar_width="8dp"/>
+
+            <TextView
+                android:id="@+id/overallRecentRecordProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_91"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/px_54"
+                android:textColor="@color/colorMainGray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_145"
+                android:layout_centerHorizontal="true"
+                android:text="@string/attendance"
+                android:textSize="@dimen/px_28"
+                android:textColor="@color/colorAttendance"/>
+
+        </RelativeLayout>
+
+        <!--Late-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_38"
+            android:layout_marginStart="@dimen/px_321"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/late"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_81"
+            android:layout_marginStart="@dimen/px_467">
+
+            <TextView
+                android:id="@+id/recentPersonOfLateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentOverallPersonOfLateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+        <!--Absentee-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_38"
+            android:layout_marginStart="@dimen/px_668"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/absent"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_81"
+            android:layout_marginStart="@dimen/px_814">
+
+            <TextView
+                android:id="@+id/recentPersonOfAbsenteeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentOverallPersonOfAbsenteeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+        <!--LeaveEarly-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_198"
+            android:layout_marginStart="@dimen/px_321"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/leave_early"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_240"
+            android:layout_marginStart="@dimen/px_467">
+
+            <TextView
+                android:id="@+id/recentPersonOfLeaveEarlyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentOverallPersonOfLeaveEarlyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+        <!--Abnormal-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_198"
+            android:layout_marginStart="@dimen/px_668"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ask_for_leave"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_240"
+            android:layout_marginStart="@dimen/px_814">
+
+            <TextView
+                android:id="@+id/recentPersonOfAbnormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentOverallPersonOfAbnormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_1032"
+        android:layout_height="@dimen/px_574"
+        android:layout_marginTop="@dimen/px_408"
+        android:layout_marginStart="@dimen/px_24"
+        android:background="@drawable/bg_border_radius">
+
+        <include layout="@layout/view_loading"
+            android:id="@+id/overallRecentRecordLoadingProgressBar"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/overallClassroomInformationTabLayout"
+            android:layout_width="@dimen/px_998"
+            android:layout_height="@dimen/px_93"
+            android:layout_marginStart="@dimen/px_17"
+            app:tabIndicatorHeight="0dp"
+            android:textColor="@drawable/text_tab_selector"
+            app:tabBackground="@android:color/transparent"
+            app:tabRippleColor="@android:color/transparent">
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/leftOfFirstTabOfOverallRecentRecord"
+            android:layout_width="@dimen/px_499"
+            android:layout_height="@dimen/px_5"
+            android:layout_marginTop="@dimen/px_90"
+            android:layout_marginStart="@dimen/px_17"
+            android:background="@drawable/color_gradient"/>
+
+        <View
+            android:id="@+id/rightOfFirstTabOfOverallRecentRecord"
+            android:layout_width="@dimen/px_499"
+            android:layout_height="@dimen/px_5"
+            android:layout_marginTop="@dimen/px_90"
+            android:layout_marginStart="@dimen/px_516"
+            android:visibility="invisible"
+            android:background="@drawable/color_gradient"/>
+
+        <View
+            android:layout_width="@dimen/px_998"
+            android:layout_height="@dimen/px_2"
+            android:layout_marginTop="@dimen/px_93"
+            android:layout_marginStart="@dimen/px_17"
+            android:background="@color/colorUnderLine"/>
+
+        <com.example.smartclass.util.NoScrollViewPager
+            android:id="@+id/overallClassroomInformationViewPager"
+            android:layout_width="@dimen/px_1032"
+            android:layout_height="@dimen/px_479"
+            android:layout_marginTop="@dimen/px_95">
+
+        </com.example.smartclass.util.NoScrollViewPager>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_1032"
+        android:layout_height="@dimen/px_574"
+        android:layout_marginTop="@dimen/px_1007"
+        android:layout_marginStart="@dimen/px_24"
+        android:background="@drawable/bg_border_radius">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/overallClassroomInformationRankingTabLayout"
+            android:layout_width="@dimen/px_998"
+            android:layout_height="@dimen/px_93"
+            android:layout_marginStart="@dimen/px_17"
+            app:tabIndicatorHeight="0dp"
+            android:textColor="@drawable/text_tab_selector"
+            app:tabBackground="@android:color/transparent"
+            app:tabRippleColor="@android:color/transparent">
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/leftOfSecondTabOfOverallRecentRecord"
+            android:layout_width="@dimen/px_499"
+            android:layout_height="@dimen/px_5"
+            android:layout_marginTop="@dimen/px_90"
+            android:layout_marginStart="@dimen/px_17"
+            android:background="@drawable/color_gradient"/>
+
+        <View
+            android:id="@+id/rightOfSecondTabOfOverallRecentRecord"
+            android:layout_width="@dimen/px_499"
+            android:layout_height="@dimen/px_5"
+            android:layout_marginTop="@dimen/px_90"
+            android:layout_marginStart="@dimen/px_516"
+            android:visibility="invisible"
+            android:background="@drawable/color_gradient"/>
+
+        <View
+            android:layout_width="@dimen/px_998"
+            android:layout_height="@dimen/px_2"
+            android:layout_marginTop="@dimen/px_93"
+            android:layout_marginStart="@dimen/px_17"
+            android:background="@color/colorUnderLine"/>
+
+        <com.example.smartclass.util.NoScrollViewPager
+            android:id="@+id/overallClassroomInformationRankingViewPager"
+            android:layout_width="@dimen/px_1032"
+            android:layout_height="@dimen/px_479"
+            android:layout_marginTop="@dimen/px_95">
+
+        </com.example.smartclass.util.NoScrollViewPager>
+
+    </RelativeLayout>
+
+</RelativeLayout>

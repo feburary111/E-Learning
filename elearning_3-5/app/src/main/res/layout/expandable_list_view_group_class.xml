@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_469">
+
+    <RelativeLayout
+        android:id="@+id/classGroupViewRoot"
+        android:layout_width="@dimen/px_1030"
+        android:layout_height="@dimen/px_114"
+        android:layout_marginStart="@dimen/px_25"
+        android:layout_marginTop="@dimen/px_24"
+        android:background="@drawable/bg_top_border_radius">
+
+        <TextView
+            android:id="@+id/expandableListItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px_42"
+            android:textColor="@color/colorMainGray"
+            android:layout_marginTop="@dimen/px_37"
+            android:layout_marginStart="@dimen/px_35"/>
+
+        <ImageView
+            android:id="@+id/imageViewExpanded"
+            android:layout_width="@dimen/px_32"
+            android:layout_height="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_47"
+            android:layout_marginStart="@dimen/px_942"
+            app:srcCompat="@mipmap/icon_31"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageViewClosed"
+            android:layout_width="@dimen/px_32"
+            android:layout_height="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_47"
+            android:layout_marginStart="@dimen/px_942"
+            android:visibility="invisible"
+            app:srcCompat="@mipmap/icon_28"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="@dimen/px_998"
+            android:layout_height="@dimen/px_2"
+            android:layout_marginTop="@dimen/px_112"
+            android:layout_marginStart="@dimen/px_17"
+            android:background="@color/colorUnderLine"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_1032"
+        android:layout_height="@dimen/px_355"
+        android:layout_marginStart="@dimen/px_24"
+        android:layout_marginTop="@dimen/px_138"
+        android:background="@drawable/bg_bottom_border_radius">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_49"
+            android:layout_marginStart="@dimen/px_38"
+            android:gravity="center_vertical">
+
+            <com.example.smartclass.util.CircleBarView
+                android:id="@+id/classRecentRecordCircleProgressBar"
+                android:layout_width="@dimen/px_252"
+                android:layout_height="@dimen/px_252"
+                app:start_angle="270"
+                app:sweep_angle="360"
+                app:bg_color="@android:color/transparent"
+                app:bar_width="8dp"/>
+
+            <TextView
+                android:id="@+id/classRecentRecordProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_91"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/px_54"
+                android:textColor="@color/colorMainGray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_145"
+                android:layout_centerHorizontal="true"
+                android:text="@string/attendance"
+                android:textSize="@dimen/px_28"
+                android:textColor="@color/colorAttendance"/>
+
+        </RelativeLayout>
+
+        <!--Late-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_38"
+            android:layout_marginStart="@dimen/px_321"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/late"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_81"
+            android:layout_marginStart="@dimen/px_467">
+
+            <TextView
+                android:id="@+id/recentRecordPersonOfLateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentRecordOverallPersonOfLateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+        <!--Absentee-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_38"
+            android:layout_marginStart="@dimen/px_668"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/absent"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_81"
+            android:layout_marginStart="@dimen/px_814">
+
+            <TextView
+                android:id="@+id/recentRecordPersonOfAbsenteeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentRecordOverallPersonOfAbsenteeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+        <!--LeaveEarly-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_198"
+            android:layout_marginStart="@dimen/px_321"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/leave_early"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_240"
+            android:layout_marginStart="@dimen/px_467">
+
+            <TextView
+                android:id="@+id/recentRecordPersonOfLeaveEarlyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentRecordOverallPersonOfLeaveEarlyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+        <!--Abnormal-->
+        <RelativeLayout
+            android:layout_width="@dimen/px_121"
+            android:layout_height="@dimen/px_121"
+            android:layout_marginTop="@dimen/px_198"
+            android:layout_marginStart="@dimen/px_668"
+            android:background="@drawable/ic_ring">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ask_for_leave"
+                android:textSize="@dimen/px_40"
+                android:textColor="@color/colorSubtitle"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_240"
+            android:layout_marginStart="@dimen/px_814">
+
+            <TextView
+                android:id="@+id/recentRecordPersonOfAbnormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_48"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"
+                android:text="@string/backslash" />
+
+            <TextView
+                android:id="@+id/recentRecordOverallPersonOfAbnormalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px_36"
+                android:textColor="@color/colorUnelectedText"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
